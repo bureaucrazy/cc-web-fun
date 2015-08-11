@@ -1,0 +1,10 @@
+<h1>Generate a random number</h1>
+
+<%# the form method must match the HTTP verb %>
+<%# the form action must match the URL %>
+<form action="/random" method="post">
+  <input type="submit" value="Generate a random number">
+</form>
+<% if @random %>
+  <h2> The random number is <%= @random %></h2>
+<% end %>

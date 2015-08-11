@@ -1,0 +1,9 @@
+<h1>Random name picker</h1>
+<form action="/pick_winner" method="post">
+  <textarea name="names"><%= @names %></textarea>
+  <input type="submit" value="Pick Random Name">
+</form>
+
+<% if @name %>
+  Congratulations <%= @name %>!
+<% end %>

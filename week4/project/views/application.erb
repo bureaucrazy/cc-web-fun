@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome to my Sinatra App</title>
+  <link rel="stylesheet" type="text/css" href="/style.css">
+  <style>
+    body {
+      background-color: <%= session[:background_color] %>;
+    }
+  </style>  
+</head>
+<body>
+  <a href="/">Home</a>
+  <a href="/temp_converter">Temperature Converter</a>
+  <a href="/pick_winner">Pick Winner</a>
+  <a href="/contact">Contact</a>
+  <a href="/all_contacts">All Contacts</a>
+  You last visited the page for: <%= session[:last_visited_user] %>
+  <a href="/change_color/red">Red</a>
+  <a href="/change_color/green">Green</a>
+  <a href="/change_color/blue">Blue</a>
+  <hr>
+  <%= yield %>
+</body>
+<body>

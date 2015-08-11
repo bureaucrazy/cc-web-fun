@@ -1,0 +1,10 @@
+<h1><%= @header %></h1>
+
+<%# the form method must match the HTTP verb %>
+<%# the form action must match the URL %>
+<form action="/randombs" method="post">
+  <input type="submit" value="Generate your BS">
+</form>
+<% if @randombs %>
+  <h2><%= @randombs %></h2>
+<% end %>

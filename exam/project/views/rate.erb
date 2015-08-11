@@ -1,0 +1,56 @@
+<h1>Rate My Website</h1>
+
+<div>
+  <form action="/rate" method="post">
+    <div>
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name">
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input type="text" name="email" id="email">
+    </div>
+
+<!-- design, content, speed, overall   -->
+    <div>
+      <table>
+        <tbody>
+          <tr>
+            <td><label for="design">Design</label></td>
+            <td><input type="radio" name="design" value="1">1 (Worst)</td>
+            <td><input type="radio" name="design" value="2">2</td>
+            <td><input type="radio" name="design" value="3">3</td>
+            <td><input type="radio" name="design" value="4">4</td>
+            <td><input type="radio" name="design" value="5">5 (Best)</td>
+          </tr>
+          <tr>
+            <td><label for="content">Content</label></td>
+            <td><input type="radio" name="content" value="1">1 (Worst)</td>
+            <td><input type="radio" name="content" value="2">2</td>
+            <td><input type="radio" name="content" value="3">3</td>
+            <td><input type="radio" name="content" value="4">4</td>
+            <td><input type="radio" name="content" value="5">5 (Best)</td>
+          </tr>
+          <tr>
+            <td><label for="speed">Speed</label></td>
+            <td><input type="radio" name="speed" value="1">1 (Worst)</td>
+            <td><input type="radio" name="speed" value="2">2</td>
+            <td><input type="radio" name="speed" value="3">3</td>
+            <td><input type="radio" name="speed" value="4">4</td>
+            <td><input type="radio" name="speed" value="5">5 (Best)</td>
+          </tr>
+          <tr>
+            <td><label for="overall">Overall</label></td>
+            <td><input type="radio" name="overall" value="1">1 (Worst)</td>
+            <td><input type="radio" name="overall" value="2">2</td>
+            <td><input type="radio" name="overall" value="3">3</td>
+            <td><input type="radio" name="overall" value="4">4</td>
+            <td><input type="radio" name="overall" value="5">5 (Best)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <input type="submit" value="Save">
+  </form>
+</div>

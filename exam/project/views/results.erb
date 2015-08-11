@@ -1,0 +1,91 @@
+<h1>Results</h1>
+
+<div>
+  <table style="border-collapse:collapse;">
+    <thead>
+      <tr style="border-bottom:1px solid black;">
+        <th colspan = "6">Unsorted</th>
+      </tr>
+      <tr style="border-bottom:1px solid black;">
+        <th>Name</th>
+        <th>Email</th>
+        <th>Design</th>
+        <th>Content</th>
+        <th>Speed</th>
+        <th>Overall</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @scores.each do |result| %>
+        <tr>
+          <td><%= result.name %></td>
+          <td><%= result.email %></td>
+          <td><%= result.design %></td>
+          <td><%= result.content %></td>
+          <td><%= result.speed %></td>
+          <td><%= result.overall %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+<div>
+  <table style="border-collapse:collapse;">
+    <thead>
+      <tr style="border-bottom:1px solid black;">
+        <th colspan = "6">Good Rating (3 or more)</th>
+      </tr>
+      <tr style="border-bottom:1px solid black;">
+        <th>Name</th>
+        <th>Email</th>
+        <th>Design</th>
+        <th>Content</th>
+        <th>Speed</th>
+        <th>Overall</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @hiscore.each do |result| %>
+        <tr>
+          <td><%= result.name %></td>
+          <td><%= result.email %></td>
+          <td><%= result.design %></td>
+          <td><%= result.content %></td>
+          <td><%= result.speed %></td>
+          <td><%= result.overall %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+<div>
+  <table style="border-collapse:collapse;">
+    <thead>
+      <tr style="border-bottom:1px solid black;">
+        <th colspan = "6">Bad Rating (Less than 3)</th>
+      </tr>
+      <tr style="border-bottom:1px solid black;">
+        <th>Name</th>
+        <th>Email</th>
+        <th>Design</th>
+        <th>Content</th>
+        <th>Speed</th>
+        <th>Overall</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @loscore.each do |result| %>
+        <tr>
+          <td><%= result.name %></td>
+          <td><%= result.email %></td>
+          <td><%= result.design %></td>
+          <td><%= result.content %></td>
+          <td><%= result.speed %></td>
+          <td><%= result.overall %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

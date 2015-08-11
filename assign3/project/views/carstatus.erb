@@ -1,0 +1,11 @@
+<h1>Car Status</h2>
+
+<form action="/carstatus" method="post">
+  Year of car:
+  <input type="text" name="year"><br>
+  <input type="submit" value="Submit">
+</form>
+
+<% if @output %>
+  <%= @output %>
+<% end %>

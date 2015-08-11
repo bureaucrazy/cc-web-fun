@@ -1,0 +1,14 @@
+<h1>C to F Temperature Converter</h1>
+
+<!-- It's important to give your form an action and a method -->
+<!-- those should match some action on your server -->
+<!-- Method should be GET or POST -->
+
+<form action="/temp_converter" method="post">
+  <input type="text" name="temp" value="<%= @temperature_in_c %>">
+  <input type="submit" value="Convert Temperature">
+</form>
+
+<% if @temperature_in_f %>
+  <p>Temperature in F is <%= @temperature_in_f %></p>
+<% end %>

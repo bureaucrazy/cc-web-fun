@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= @title || "My first Sinatra Application"%></title>
+    <meta name="charset" value="UTF-8">
+  </head>
+  <body>
+    <a href="/">Home</a>
+    <a href="/contact">Contact Us</a>
+    <a href="/random">Random</a>
+    <a href="/randombs">Random BS</a>
+    <hr>
+    <%# the yield will be replaced by the content of the template
+        being rendered. E.g. index.erb %>
+    <%=yield%>
+  </body>
+</html>
